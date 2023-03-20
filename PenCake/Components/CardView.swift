@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct CardView: View {
+//    @Binding var bool: Bool
+    
     let diary: Diary
     var body: some View {
         HStack {
             Text(diary.title)
                 .font(.system(size: 18, weight: .light, design: .serif))
+        
+//            Text(bool.description)
            Spacer()
             Text(diary.date)
                 .font(.system(size: 14, weight: .light, design: .serif))
@@ -22,10 +26,10 @@ struct CardView: View {
         
     }
 }
-
-struct CardView_Previews: PreviewProvider {
-    static var diary = Diary.sampleDiary[2]
-    static var previews: some View {
-        CardView(diary: diary)
-    }
-}
+//
+//struct CardView_Previews: PreviewProvider {
+//    static var diary = Diary.sampleDiary[2]
+//    static var previews: some View {
+//        CardView(diary: diary)
+//    }
+//}
